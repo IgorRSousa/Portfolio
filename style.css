@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(#000b24 , #000000);
+
+}
+
+main{
+    color: aliceblue;
+    height: 1500px;
+}
+
+#proximo{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#telaInicial{
+    background:#000 url(imagens/background\ 2.jpg) no-repeat;
+    background-color: rgb(21, 128, 221);
+    background-size: 100%;
+    width: 100%;
+    margin-top: -38px;
+    margin-left: -8px;
+}
+
+#apresentacao{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 280px;
+}
+#continue{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+#continue:hover{
+    color: #949494;
+}
