@@ -1,8 +1,20 @@
 $(function(e){
     var alturaDaTela = $(window).height();
-    $("#telaInicial").css("height", alturaDaTela+30);
+    $("header").css("height", alturaDaTela);
+    var alturaFoto, alturaTexto;
+    alturaFoto = $("section aside").height();
+    alturaTexto = $("section p").height()
+    console.log(alturaFoto, alturaTexto)
 
-    var div = document.getElementById('apresentacao');
+
+    if(alturaFoto >= alturaTexto){
+        $("#sectionApresentacao").css("height", alturaFoto + 40);
+        
+    }else{
+        $("#sectionApresentacao").css("height", alturaTexto + 40);
+    }
+
+    var elementoPargrafo = document.getElementById('apresentacao');
     var texto1 = 'Olá, meu nome é Igor Rafael de Sousa !';
 
     function escrever(str, el) {
@@ -16,11 +28,14 @@ $(function(e){
         }, 100);
     }
 
+    $("header p").hover(function(e){$("header p img").attr("src", "imagens/SetaHover.png")},
+                        function(e){$("header p img").attr("src", "imagens/Seta.png")});
+
     $("header p").click(function(e){
         $("html,body").animate({scrollTop:$("main").offset().top}, 1300)
-    })
+    });
 
-    escrever(texto1, div)
+    escrever(texto1, elementoPargrafo)
 });
 
 

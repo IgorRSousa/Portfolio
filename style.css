@@ -1,24 +1,45 @@
 body{
     background: linear-gradient(#000b24 , #000000);
-
 }
 
 main{
     color: aliceblue;
     height: 1500px;
+    padding: 20px;
 }
 
-#proximo{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+section{
+    background-color: #3e3e46;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 15px;
+    display: inline-block;
+    box-shadow: -8px 8px #303036;
+    /*Remover apos ajustes*/
+    border: #FFF solid 1px;
 }
-#telaInicial{
+section p {
+    width: 76%;
+    float: left;
+    font-size: 18px;
+    font-family:'Ubuntu', sans-serif;
+    /*Remover apos ajustes*/
+    border: #FFF solid 1px;
+}
+
+#foto{
+    float: right;
+    /*Remover apos ajustes*/
+    border: #FFF solid 1px;
+}
+
+header{
     background:#000 url(imagens/background\ 2.jpg) no-repeat;
     background-color: rgb(21, 128, 221);
     background-size: 100%;
     width: 100%;
-    margin-top: -38px;
-    margin-left: -8px;
+    /*Remover apos ajustes*/
+    border: #FFF solid 1px;
 }
 
 #apresentacao{
@@ -26,16 +47,23 @@ main{
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     text-align: center;
-    padding: 280px;
+    font-weight: normal;
+    padding-top: 280px;
 }
-#continue{
+header p{
+    background: url(imagens/Seta.png) no-repeat;
     color: #FFF;
     text-align: center;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     cursor: pointer;
+    border: #FFF solid 1px;
 }
-#continue:hover{
+header p img{
+    max-width: 40px;
+    
+}
+header p:hover{
     color: #949494;
 }
