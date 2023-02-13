@@ -1,17 +1,17 @@
 $(function(e){
     var alturaDaTela = $(window).height();
     $("header").css("height", alturaDaTela);
+
     var alturaFoto, alturaTexto;
     alturaFoto = $("section aside").height();
     alturaTexto = $("section p").height()
-    console.log(alturaFoto, alturaTexto)
-
+    
 
     if(alturaFoto >= alturaTexto){
-        $("#sectionApresentacao").css("height", alturaFoto + 40);
+        $("#sectionBio").css("height", alturaFoto + 40);
         
     }else{
-        $("#sectionApresentacao").css("height", alturaTexto + 40);
+        $("#sectionBio").css("height", alturaTexto + 40);
     }
 
     var elementoPargrafo = document.getElementById('apresentacao');

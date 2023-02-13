@@ -1,69 +1,95 @@
+*{
+    font-family:'Ubuntu', sans-serif;
+    color: #FFF;
+    font-size: 14px;
+}
+
 body{
     background: linear-gradient(#000b24 , #000000);
-}
-
-main{
-    color: aliceblue;
-    height: 1500px;
-    padding: 20px;
-}
-
-section{
-    background-color: #3e3e46;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px 15px;
-    display: inline-block;
-    box-shadow: -8px 8px #303036;
-    /*Remover apos ajustes*/
-    border: #FFF solid 1px;
-}
-section p {
-    width: 76%;
-    float: left;
-    font-size: 18px;
-    font-family:'Ubuntu', sans-serif;
-    /*Remover apos ajustes*/
-    border: #FFF solid 1px;
-}
-
-#foto{
-    float: right;
-    /*Remover apos ajustes*/
-    border: #FFF solid 1px;
+    min-width: 800px;
 }
 
 header{
-    background:#000 url(imagens/background\ 2.jpg) no-repeat;
-    background-color: rgb(21, 128, 221);
+    background:#000 url(imagens/background\ 1.jpg) no-repeat;
     background-size: 100%;
     width: 100%;
-    /*Remover apos ajustes*/
-    border: #FFF solid 1px;
 }
 
-#apresentacao{
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    text-align: center;
-    font-weight: normal;
-    padding-top: 280px;
-}
 header p{
     background: url(imagens/Seta.png) no-repeat;
     color: #FFF;
     text-align: center;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     cursor: pointer;
-    border: #FFF solid 1px;
+    
 }
 header p img{
     max-width: 40px;
-    
 }
 header p:hover{
     color: #949494;
+}
+
+main{
+    
+    height: 1500px;
+    padding: 20px;
+}
+
+#apresentacao{
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#sectionBio{
+    background-color: #3e3e46;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 15px;
+    box-shadow: -8px 8px #303036; 
+}
+#sectionBio p {
+    width: 76%;
+    float: left;
+    font-size: 18px;
+    
+}
+
+#foto{
+    float: right;
+}
+
+#foto img{
+    border-radius: 8px;
+}
+
+#sectionTcnologias{
+    border: #FFF solid 3px;
+    height: 600px;
+}
+
+#coluna1, #coluna2{
+    border-right: #FFF solid 3px;
+}
+
+#sectionTcnologias div{
+    max-width: 30%;
+    min-width: 30%;
+    font-size: 18px;
+    text-align: center;
+    margin: 1.5%;
+    float: left;
+    height: 550px;
+}
+
+
+#sectionTcnologias div img{
+    max-width: 100px;
+    margin-top: 15px;
+}
+
+#sectionTcnologias div h1{
+    font-size: 20px;
 }
